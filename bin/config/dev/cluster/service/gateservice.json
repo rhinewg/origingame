@@ -17,7 +17,9 @@
         "MaxConnNum": 10000,
         "PendingWriteNum": 10000,
         "LittleEndian": false,
-        "MaxMsgLen": 1024000
+        "MaxMsgLen": 1024000,
+        "KeyFile": "",
+        "CertFile": ""
       },
       "KcpCfg_": {
         "ListenAddr":":9001",

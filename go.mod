@@ -6,7 +6,7 @@ toolchain go1.23.3
 
 require (
 	github.com/axgle/mahonia v0.0.0-20180208002826-3358181d7394
-	github.com/duanhf2012/origin/v2 v2.1.6
+	github.com/duanhf2012/origin/v2 v2.1.7-0.20250421132334-15580ffce9dd
 	github.com/gin-contrib/cors v1.7.4
 	github.com/gin-gonic/gin v1.10.0
 	github.com/goccy/go-json v0.10.4

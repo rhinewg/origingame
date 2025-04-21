@@ -41,6 +41,7 @@ type GameService struct {
 }
 
 func (gs *GameService) OnInit() error {
+
 	gs.mapClientPlayer = make(map[string]*player.Player, 2048)
 	gs.initBalance()
 	gs.performanceAnalyzer = &performance.PerformanceAnalyzer{}
@@ -69,11 +70,6 @@ func (gs *GameService) OnInit() error {
 	if err != nil {
 		return err
 	}
-
-	var i uint64
-	gs.SafeNewTicker(&i, 1*time.Second, nil, func(u uint64, i interface{}) {
-		log.Info("xxxxxxxx")
-	})
 
 	//打开性能分析工具
 	gs.OpenProfiler()
